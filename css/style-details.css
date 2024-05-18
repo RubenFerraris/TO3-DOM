@@ -1,0 +1,136 @@
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root {
+    --verde: rgb(19, 209, 146);
+    --gris: rgb(136, 136, 136);
+}
+
+.verde_txt {
+    color: var(--verde);
+}
+
+.gris_txt {
+    color: var(--gris);
+}
+.precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    a{
+        flex: 0 0 33.33%;
+        border: 0;
+        background-color: transparent ;
+        cursor: pointer;
+       transition: all  0.1s ease-in-out;
+       color: grey;
+       text-align: center;
+       line-height: 45px;
+    }
+    a:hover{
+        font-weight: 400;
+        border-top: solid 3px rgb(46, 235, 55);
+       text-shadow: 0 0 5px rgb(41, 40, 40);
+       color: black;
+    }
+}
+a:active{
+    color: black;
+    border-top: solid 3px rgb(18, 109, 189);
+    font-weight: 700;
+}
+
+.mainresto{
+    height: 100%;
+    
+    padding: 0;
+    .linkresto{
+        height: 60%;
+        width: 100%;
+        
+        position: relative;
+        .picresto{
+            height: 80%;
+            width: 100%;
+            background-color: rgb(18, 109, 189);
+            background-image: url(..//img/oko-restaurant.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        
+        }
+.picresto::before{
+    content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+
+}
+        .nameresto{
+            height: 20%;
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+        .punturesto{
+            bottom: 12%;
+            right: 12%;
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            background-color: aquamarine;
+            display: grid;
+            place-items: center;
+            font-size: 16pt;
+            color: white;
+            font-weight: bolder;
+            border-radius: 14px 0 14px 0;
+        }
+    }
+   
+}
+.categorias{
+    height: 30%;
+    width: 100% auto;
+    background-color: rgb(189, 157, 109);
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: scroll;
+
+
+
+}
+.btn-cat{
+    height: 70px;
+    flex: 0 0 85px;
+    color: rgba(48, 44, 44, 0.637);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.icono{
+    width: 40px;
+    background-color: rgb(161, 123, 17);
+    color: rgb(65, 61, 61);
+    display: grid;
+    place-items: center;
+}

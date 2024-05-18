@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 60%;
+    width: 100%;
+    background-image: url(../img/oko-restaurant.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .portada {
+        height: 70%;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(252, 250, 250, 0.61), rgba(0, 0, 0, 0.096));
+        position: relative;
+    }
+
+    nav {
+        height: 30%;
+        width: 100%;
+        background-color: rgb(100, 228, 185);
+    }
+}
+
+.saludo {
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+
+}
+
+.saludo:hover ::before {
+    content: 'ola manola ';
+    height: 100px;
+}
+
+.saludo:hover ::after {
+    content: ' me pican lo coco';
+    height: 100px;
+}
+
+.buscador {
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+
+    .icono {
+
+        width: 40px;
+        background-color: rgb(161, 123, 17);
+        color: rgb(65, 61, 61);
+        display: grid;
+        place-items: center;
+    }
+
+}
+
+input[type="search"] {
+
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: calc(100% - 80px);
+}
+
+input[type="submit"]:focus {
+    width: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 233, 232);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    transition: 100s ease-in-out;
+    transform: rotate(17000deg);
+
+}
+
+nav.categorias {
+    height: 30%;
+    width: 100% auto;
+    background-color: rgb(189, 157, 109);
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: scroll;
+
+
+}
+
+nav a.btn-cat {
+
+    height: 70px;
+    flex: 0 0 85px;
+    color: rgba(48, 44, 44, 0.637);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.f30 {
+    font-size: 30pt !important;
+}
+
+.f16 {
+    font-size: 16pt !important;
+}
+
+.f10 {
+    font-size: 10pt !important;
+}
+
+a {
+    color: rgb(46, 45, 45);
+}
+
+span {
+    color: rgb(255, 255, 247);
+}
+
+a:hover {
+    color: rgb(88, 85, 85);
+}
+
+a:active {
+    text-shadow: 0 0 10px white;
+}
+
+/*link=instancia inicial de un link
+active= cuando hago click
+visited enlace visto
+hover= cuando paso el mouse sobre el enlace o elemento */
+main {
+    height: 100px auto;
+    width: 100%;
+    padding: 20px;
+
+    .restaurantes {
+        width: 100%;
+        height: 100px auto;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        .resto {
+
+            width: 100%;
+
+            flex: 0 0 160px;
+            align-content: center;
+            display: flex;
+            position: relative;
+
+            .distancia {
+                position: absolute;
+                top: 5px;
+                left: 30%;
+                font-weight: bolder;
+                color: aliceblue;
+                text-shadow: 0 0 5px black;
+            }
+
+            .puntuacion {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                padding: 15px;
+                background-color: var(--verde);
+                border-radius: 10px 0 10px 0;
+                font-weight: bolder;
+                color: bisque;
+                border-bottom-left-radius: 20px;
+                display: flex;
+            }
+        }
+    }
+}
+
+:root {
+    --verde: rgb(19, 209, 146);
+    --gris: rgb(136, 136, 136);
+}
+
+.verde_txt {
+    color: var(--verde);
+}
+
+.gris_txt {
+    color: var(--gris);
+}
+
+.imagen_resto {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(112, 108, 108);
+    float: left;
+    z-index: 0;
+    background-image: url(../img/restoranIgualinho.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.desc_resto {
+    position: absolute;
+    float: right;
+    right: 0;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(225, 228, 227);
+    border-bottom-left-radius: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+
+    .precio_val {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .valoraciones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (orientation=landscape) {
+    main {
+        .restaurantes {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .resto {
+                height: 160px;
+                flex: 0 0 calc(50% - 10px);
+            }
+        }
+    }
+}
+
+nav.resto1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/*
+flex-grow= es la capacidad del elemento hijo de agrandarse si es necesario 
+flex-shrink= es la capacidad del elemento hijo de achicarse si es necesario
+flex-basis= establece un ancho minimo al elemento hijo*/
+nav.resto1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+}
