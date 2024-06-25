@@ -1,285 +1,241 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+  text-decoration: none;
 }
-
-body {
-    height: 100vh;
+:root{
+  --morfiGreen:rgb(19, 209, 146);
+  --morfiGray:rgb(122, 122, 122);
+  --morfiWhite: #f1f1f1;
+  --morfiBlackLight:rgba(35, 35, 35, 0.1);
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--morfiWhite);
+  color:white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.f30{
+  font-size: 25pt !important;
+}
+header{
+  height: 60%;
+  width: 100%;
+  background-image: url(../img/MorfiHub.jpg);
+  background-position: bottom;
+  background-size: cover;
+  .portada{
+    height: 70%;
     width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header {
-    height: 60%;
-    width: 100%;
-    background-image: url(../img/oko-restaurant.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .portada {
-        height: 70%;
-        width: 100%;
-        background: linear-gradient(0deg, rgba(252, 250, 250, 0.61), rgba(0, 0, 0, 0.096));
-        position: relative;
-    }
-
-    nav {
-        height: 30%;
-        width: 100%;
-        background-color: rgb(100, 228, 185);
-    }
-}
-
-.saludo {
+    position: relative;
+    background: linear-gradient(180deg, rgba(241, 241, 241, 0.068), rgba(0, 0, 0, 0.486));
+  }
+  .saludo{
     position: absolute;
+    bottom: 25px;
     left: 5%;
-    bottom: 20%;
-
+  }
 }
-
-.saludo:hover ::before {
-    content: 'ola manola ';
-    height: 100px;
-}
-
-.saludo:hover ::after {
-    content: ' me pican lo coco';
-    height: 100px;
-}
-
-.buscador {
-    position: absolute;
-    bottom: -20px;
-    left: 5%;
-    height: 40px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    overflow: hidden;
-
-    .icono {
-
-        width: 40px;
-        background-color: rgb(161, 123, 17);
-        color: rgb(65, 61, 61);
-        display: grid;
-        place-items: center;
-    }
-
-}
-
-input[type="search"] {
-
-    border: none;
-    outline: none;
-    padding: 10px;
-    width: calc(100% - 80px);
-}
-
-input[type="submit"]:focus {
-    width: 40px;
-    border: none;
-    outline: none;
-    background-color: rgb(233, 233, 232);
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    transition: 100s ease-in-out;
-    transform: rotate(17000deg);
-
-}
-
-nav.categorias {
-    height: 30%;
-    width: 100% auto;
-    background-color: rgb(189, 157, 109);
-    padding: 40px;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    overflow-x: scroll;
-
-
-}
-
-nav a.btn-cat {
-
+.categorias{
+  height: 30%;
+  width: 100%;
+  background-color:var(--morfiWhite);
+  padding: 35px;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: scroll;
+  .btn_cat{
     height: 70px;
-    flex: 0 0 85px;
-    color: rgba(48, 44, 44, 0.637);
+    flex: 0 0 100px;
+    background-color:var(--morfiWhite);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.f30 {
-    font-size: 30pt !important;
-}
-
-.f16 {
-    font-size: 16pt !important;
-}
-
-.f10 {
-    font-size: 10pt !important;
-}
-
-a {
-    color: rgb(46, 45, 45);
-}
-
-span {
-    color: rgb(255, 255, 247);
-}
-
-a:hover {
-    color: rgb(88, 85, 85);
-}
-
-a:active {
-    text-shadow: 0 0 10px white;
-}
-
-/*link=instancia inicial de un link
-active= cuando hago click
-visited enlace visto
-hover= cuando paso el mouse sobre el enlace o elemento */
-main {
-    height: 100px auto;
-    width: 100%;
-    padding: 20px;
-
-    .restaurantes {
-        width: 100%;
-        height: 100px auto;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-
-        .resto {
-
-            width: 100%;
-
-            flex: 0 0 160px;
-            align-content: center;
-            display: flex;
-            position: relative;
-
-            .distancia {
-                position: absolute;
-                top: 5px;
-                left: 30%;
-                font-weight: bolder;
-                color: aliceblue;
-                text-shadow: 0 0 5px black;
-            }
-
-            .puntuacion {
-                position: absolute;
-                right: -10px;
-                top: -10px;
-                padding: 15px;
-                background-color: var(--verde);
-                border-radius: 10px 0 10px 0;
-                font-weight: bolder;
-                color: bisque;
-                border-bottom-left-radius: 20px;
-                display: flex;
-            }
-        }
+    font-size: 1,2em;
+    color:rgb(119, 119, 119);
+    span,i{
+      font-size: 30px;
     }
+  }
+  a:link{
+    color:var(--morfiGray);
+  }
+  a:visited{
+    color:var(--morfiGreen);
+  }
+  a:hover{
+    color:black;
+  }
+  a:active{
+    text-shadow: 0px 0px 10px black;
+  }
 }
-
-:root {
-    --verde: rgb(19, 209, 146);
-    --gris: rgb(136, 136, 136);
+::-webkit-scrollbar{
+  height:6px;
+  width:0;
 }
-
-.verde_txt {
-    color: var(--verde);
+::-webkit-scrollbar-track{
+  background-color: var(--morfiWhite);
 }
-
-.gris_txt {
-    color: var(--gris);
+::-webkit-scrollbar-thumb{
+  border-radius:3px;
+  background-color: var(--morfiWhite);
+} 
+::-webkit-scrollbar-thumb:hover{
+  background-color: aquamarine;
 }
-
-.imagen_resto {
-    position: absolute;
-    width: 45%;
+::-webkit-scrollbar-thumb:active{
+  background-color: var(--morfiGreen);
+}
+.buscador{
+  position: absolute;
+  bottom: -20px;
+  right: 5%;
+  left: 5%;
+  height: 40px;
+  width: 90%;
+  margin: auto;
+  background-color: var(--morfiWhite);
+  display:flex;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.300);
+  overflow: hidden;
+  .icono{
     height: 100%;
-    background-color: rgb(112, 108, 108);
-    float: left;
-    z-index: 0;
-    background-image: url(../img/restoranIgualinho.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.desc_resto {
-    position: absolute;
-    float: right;
+    width: 40px;
+    background-color:var(--morfiGreen);
+    display: grid;
+    place-items: center;
+    i{
+      font-size: 150%;
+    }
+  }
+  input[type=search]{
+    border:none;
+    outline: none;
+    padding: 2px;
+    width: calc(100% - 80px);
+    background-color: var(--morfiWhite);
+    margin-left: 7px;
+  }
+  input[type=submit]{
+    border:none;
+    width: 40px;
+    background-color: var(--morfiWhite);
     right: 0;
-    display: flex;
-    width: 60%;
-    height: 100%;
-    background-color: rgb(225, 228, 227);
-    border-bottom-left-radius: 20px;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 15px;
-
-    .precio_val {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .valoraciones {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color:rgb(56, 56, 56);
+  }
+  input[type=submit]:hover{
+    transform: scale(120%);
+  }
 }
-
-@media (orientation=landscape) {
-    main {
-        .restaurantes {
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            .resto {
-                height: 160px;
-                flex: 0 0 calc(50% - 10px);
-            }
+.flex{
+  display: flex;
+}
+main{
+  padding: 20px;
+  section.productos{
+    height: 600px auto;
+    width: 100%;
+    color:#1f1f1f;
+    div.text{
+      height: 30px;
+      color:var(--morfiGray);
+    }
+    .wrap{
+      position: relative;
+      display:flex;
+      flex-wrap: wrap;
+      gap:10px;
+    }
+    article.restaurantes,a.restaurantes{
+      height: 130px;
+      min-height: 130px;
+      width: calc(50% - 5px);
+      min-width: 350px;
+      /* background-image: url(../img/chazaresto.png);
+      background-position:left;
+      background-size: cover; */
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.300);
+      border-radius: 10px 0 0 10px;
+      div.img{
+        border-radius:inherit;
+        height: 100%;
+        width: 40%;
+        position: relative;
+        padding: 10px;
+        object-fit:contain;
+        overflow: hidden;
+        img{
+          position:absolute;
+          left:0;
+          top:0;
+          height:100%;
         }
+        div.distancia{
+          position: absolute;
+          right:9px;
+          color: rgb(214, 214, 214);
+        }
+      }
+      div.descripcion{
+        height: 100%;
+        width: 60%;
+        background-color: var(--morfiWhite);
+        border-radius: 0 0 0 15px;
+        padding: 15px;
+        position:relative;
+        color: rgb(167, 167, 167);
+        div{
+          margin-bottom: 5px;
+        }
+        div.nombre{
+          font-size: 100%;
+          margin-bottom: 10px;
+        }
+        div.datos{
+          font-size: 80%;
+          margin-bottom: 15px;
+        }
+        div.valoracion{
+          div.estrellas{
+            margin-right: auto;
+            font-size:13px;
+            span{
+              font-size:15px;
+            }
+          }
+          div.costo{
+            span{
+              font-size:15px;
+            }
+          }
+          .selected{
+            color:var(--morfiGreen);
+          }
+        }
+        div.puntaje{
+          position: absolute;
+          height:30px;
+          width: 30px;
+          top: -5px;
+          right: -5px;
+          background-color:var(--morfiGreen);
+          border-radius: 10px 0 10px 0;
+          display: grid;
+          place-items: center;
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.300);
+          color:white;
+          font-size: 12px;
+        }
+      }
     }
-}
-
-nav.resto1 {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-}
-
-/*
-flex-grow= es la capacidad del elemento hijo de agrandarse si es necesario 
-flex-shrink= es la capacidad del elemento hijo de achicarse si es necesario
-flex-basis= establece un ancho minimo al elemento hijo*/
-nav.resto1 {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: aquamarine;
+  }
 }
