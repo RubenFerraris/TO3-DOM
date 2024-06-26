@@ -1,5 +1,10 @@
 [
   {
+    "id":0,
+    "name":"Club De la milanesa",
+    "dist":"6km","ubic":"Grand Bourg, Rotonda","time":"09:00-11:00",
+    "value":{"stars":4,"coments":72,"cost":2},
+    "img":{"src":"./img/milanesa.jpg","alt":""},
     "menu":[
       {"id":1,"name":"Milanesa De carne","price":"$8.99","desc":"La tipica"},
       {"id":2,"name":"Suprema de pollo","price":"$9.99","desc":"Es de pollo"},
@@ -11,6 +16,11 @@
     ]
   },
   {
+    "id":1,
+    "name":"Kono Diavolo Da",
+    "dist":"34km","ubic":"Capri,Italia","time":"∞",
+    "value":{"stars":3,"coments":320,"cost":2},
+    "img":{"src":"./img/diavolo.jpg","alt":""},
     "menu":[
       {"id":1,"name":"Spaghetti","price":"$8.99","desc":"fideo"},
       {"id":2,"name":"Caesar Salad","price":"8.99","desc":"SHIZAAAAAAAAAA"},
@@ -21,6 +31,11 @@
     ]
   },
   {
+    "id":2,
+    "name":"PapuRestaurante",
+    "dist":"3m","ubic":"PapuCasa","time":"00:00-00:01",
+    "value":{"stars":2,"coments":3,"cost":1},
+    "img":{"src":"./img/chazaresto.jpg","alt":""},
     "menu":[
       {"id":1,"name":"PapuPapas","price":"$8.99","desc":"Que patatus"},
       {"id":2,"name":"Papu milanesas","price":"$9.99","desc":"When haces tus momos en una mila"},
@@ -31,6 +46,11 @@
     ]
   },
   {
+    "id":3,
+    "name":"Kuse ga Tsuyoi Menya Reiwa",
+    "dist":"60km","ubic":"Osaka,Japan","time":"12–2 p.m., 7–11 p.m",
+    "value":{"stars":1,"coments":999,"cost":3},
+    "img":{"src":"./img/japan.jpg","alt":""},
     "menu":[
       {"id":1,"name":"ramen","price":"$8.99","desc":"fideos japochinos"},
       {"id":2,"name":"udon","price":"$9.99","desc":"La misma wea"},
@@ -41,6 +61,11 @@
     ]
   },
   {
+    "id":4,
+    "name":"El Chotazo",
+    "dist":"6km","ubic":"Tortu, Plaza La Amistad","time":"13:00-69:00",
+    "value":{"stars":4,"coments":23,"cost":3},
+    "img":{"src":"./img/chazaresto.png","alt":""},
     "menu":[
       {"id":1,"name":"Choripan","price":"$8.99","desc":"Nuestra especialidad"},
       {"id":2,"name":"La promesa","price":"$9.99","desc":"Te acordas, no?"},
@@ -51,6 +76,11 @@
     ]
   },
   {
+    "id":5,
+    "name":"Panchotazo",
+    "dist":"1200km","ubic":"Grand Bourg, Rotonda","time":"69:00-13:00",
+    "value":{"stars":3,"coments":456,"cost":2},
+    "img":{"src":"./img/chazaresto.jpg","alt":""},
     "menu":[
       {"id":1,"name":"pancho normie","price":"$8.99","desc":"30%sal y 70% chicha"},
       {"id":2,"name":"Dp","price":"$9.99","desc":"Pancho doble"},
