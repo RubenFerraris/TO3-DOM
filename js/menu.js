@@ -11,6 +11,8 @@ fetch('js/resto.json')
     if(e.id==1){
       e.menu.forEach(m=>{
         document.getElementById('options').innerHTML +=/*html*/`
+        <div class="container"></div>
+      
         <a href="./saucer.html" class="card flex">
           <div class="card-img">
             <div class="card-price">${m.price}</div>
@@ -19,7 +21,8 @@ fetch('js/resto.json')
             <h3 class="card-name">${m.name}</h3>
             <h3 class="card-desc">${m.desc}</h3>
           </div>
-        </a>`
+        </div>
+        </a></div>`
       })
     }
   })

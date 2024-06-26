@@ -91,13 +91,14 @@ main.menu{
     padding:5% 5% 75px 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     z-index:1;
     gap:20px;
     .card{
-      height:100px;
-      max-width:400px;
-      min-width:300px;
+      width: 250px;
+      height: 150px ;
+      padding: 10px;
+      border-radius: 20px;
+      gap: 20px;
       .card-img{
         height:100%;
         width:30%;
@@ -139,14 +140,16 @@ main.menu{
           height:50%;
           width:100%;
           padding-left:15px;
-          display: flex;
-          align-items: center;
+        
           font-weight: 200;
         }
         .card-name{
           color:black;
         }
         .card-desc{
+         display: flex;
+          overflow-y: scroll;
+          height: fit-content;
           color:var(--morfiGray);
         }
       }
@@ -192,6 +195,9 @@ main.reviews{
       }
       .card-info{
         .card-desc{
+          height:100px;
+      max-width:400px;
+      min-width:300px;
           color:var(--morfiGray);
           font-size: 90%;
         }
@@ -224,26 +230,51 @@ nav{
   a.actual{
     font-weight:700;
   }
-  /* button{
-    flex: 0 0 33.33%;
-    border:0;
-    background-color:transparent!important;
-    cursor:pointer;
-    font-size: 105%;
-    color:var(--morfiGray);
-    text-transform:uppercase;
+  .container{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
-  button:hover{
-    border-top:3px solid var(--morfiGreen);
-    color:black;
+  .carta{
+    width: 250px;
+    height: 500px auto;
+    background-color: #E36414;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 20px;
   }
-  button.actual{
-    border-top:3px solid var(--morfiGreen);
-    color:black;
-  } */
 }
 .flex{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/*CONTENEDOR SCROLLBAR*/
+::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+  border-radius: 5px;
+  }
+  
+  /* FONDO BARRA SCROLL*/
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  }
+  
+  /* SELECTOR */
+  ::-webkit-scrollbar-thumb {
+  background: rgb(109, 223, 185);
+  ;
+  border-radius: 5px;
+  }
+  
+  /* SELECTOR hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(84, 171, 142);
+  ;
+  }
