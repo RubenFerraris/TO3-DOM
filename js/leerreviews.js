@@ -16,7 +16,7 @@ fetch('js/restos.json')
                     </div>
                     <div class="desc">
                       <h2>${el.name} </h2>
-                      <h5>- ${el.food} </h5>
+                     
                       <p>${el.description} </p>
                     </div>
                   </article>`
