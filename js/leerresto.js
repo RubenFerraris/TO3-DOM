@@ -7,7 +7,7 @@ fetch('js/restos.json')
     .then(data => {
         data.forEach(e => {
             if (e.name == localStorage.getItem("titulo")) {
-                body.innerHTML += /*html*/
+                body.innerHTML += 
                     ` <header class="restaurante">
 <section class="portada">
     <a href="index.html" class="iconos">
