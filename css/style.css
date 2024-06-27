@@ -16,7 +16,21 @@ a {
   color: black;
   cursor: pointer;
 }
+a:link {
+  color: red;
+}
 
+a:visited {
+  color: violet;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  text-shadow: 0 0 10px black;
+}
 p {
   color: #949494;
 }
