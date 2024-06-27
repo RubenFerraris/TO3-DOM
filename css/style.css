@@ -13,15 +13,13 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgba(117, 116, 116, 0.726);
   cursor: pointer;
 }
-a:link {
-  color: red;
-}
+
 
 a:visited {
-  color: violet;
+  color: rgb(73, 228, 248);
 }
 
 a:hover {
@@ -31,25 +29,7 @@ a:hover {
 a:active {
   text-shadow: 0 0 10px black;
 }
-p {
-  color: #949494;
-}
 
-.verde {
-  color: rgb(6, 218, 157);
-}
-
-.rojo {
-  color: rgba(218, 13, 6, 0.7);
-}
-
-.naranja {
-  color: rgba(218, 109, 6, 0.7);
-}
-
-.amarillo {
-  color: rgba(243, 227, 4, 0.8);
-}
 
 .f20 {
   font-size: 20pt;
@@ -83,11 +63,9 @@ header.index {
     height: 65%;
     width: 100%;
     position: relative;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.493),
-      rgba(255, 255, 255, 0) 90%
-    );
+    background: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.493),
+        rgba(255, 255, 255, 0) 90%);
 
     & .saludo {
       position: absolute;
@@ -139,6 +117,7 @@ header.index {
     }
   }
 }
+
 main.index {
   width: 100%;
   display: flex;
@@ -176,10 +155,12 @@ main.index {
       width: 42%;
       border-radius: 15px 0 0 15px;
       position: relative;
-      img{
+
+      img {
         height: auto;
         width: 60%;
       }
+
       & span {
         color: #ffffff;
         position: absolute;
@@ -262,25 +243,27 @@ main.index {
     margin: 0 30px 30px 30px;
   }
 }
-.link{
- 
+
+.link {
+
   position: absolute;
   top: 10px;
   left: 10px;
 }
+
 header.comida {
   height: 60%;
   width: 100%;
   position: relative;
+
   .degrade {
     height: 80%;
     width: 100%;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgb(255, 255, 255)
-    );
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgb(255, 255, 255));
+
     .portada {
       z-index: -1 !important;
       height: 100%;
@@ -291,7 +274,7 @@ header.comida {
       background-size: cover;
     }
   }
-  
+
   .nombrePlato {
     position: absolute;
     display: flex;
@@ -303,6 +286,7 @@ header.comida {
     padding-top: 30px;
     font: 1.4em sans-serif;
   }
+
   .valorPlato {
     position: absolute;
     display: flex;
@@ -327,10 +311,12 @@ main.comida {
   padding: 30px;
   position: relative;
   overflow: hidden;
+
   p {
     position: absolute;
     top: 40px;
   }
+
   input[type="text"] {
     position: absolute;
     bottom: 40%;
@@ -340,6 +326,7 @@ main.comida {
     border-bottom: solid #949494a1 2px;
     outline: none;
   }
+
   .footer {
     position: absolute;
     bottom: 20px;
@@ -349,6 +336,7 @@ main.comida {
     gap: 5px;
     width: 90%;
     height: 27%;
+
     .sumador {
       width: 20%;
       height: 100%;
@@ -357,6 +345,7 @@ main.comida {
       place-items: center;
       cursor: pointer;
     }
+
     .carrito {
       width: 60%;
       height: 100%;
@@ -365,6 +354,7 @@ main.comida {
       place-items: center;
       cursor: pointer;
     }
+
     span {
       font-weight: bolder;
       font-size: 18pt;
@@ -393,7 +383,7 @@ nav.categorias {
     align-items: center;
     justify-content: center;
     font-size: 1.1em;
-    color: rgba(117, 116, 116, 0.726);
+
     cursor: default;
   }
 }
@@ -411,15 +401,15 @@ header.restaurante {
     height: 80%;
     width: 100%;
     position: relative;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.493),
-      rgba(255, 255, 255, 0) 90%
-    );
-    a{
+    background: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.493),
+        rgba(255, 255, 255, 0) 90%);
+
+    a {
       margin: 20px;
       font-size: 25pt;
     }
+
     .calificacion {
       position: absolute;
       display: grid;
@@ -490,12 +480,14 @@ header.menu {
   justify-content: center;
   padding: 20px;
   position: relative;
-  a{
+
+  a {
     position: absolute;
     top: 35%;
     left: 10px;
   }
 }
+
 main.menu {
   height: calc(92% - 60px);
   width: 100%;
@@ -508,6 +500,7 @@ main.menu {
   align-items: center;
   justify-content: flex-start;
   position: relative;
+
   span.Titulo {
     position: absolute;
     color: rgb(97, 97, 97);
@@ -517,18 +510,21 @@ main.menu {
     height: 30px;
     border-bottom: solid var(--verde) 2px;
   }
+
   .platillo {
     width: 90% auto;
     height: 170px;
     min-height: 150px;
     max-height: 200px;
     display: flex;
+
     .img {
       position: relative;
       width: 35%;
       height: 100%;
       display: grid;
       place-items: center;
+
       img {
         width: 100%;
         max-width: 200px;
@@ -536,6 +532,7 @@ main.menu {
         max-height: 200px;
         border-radius: 50%;
       }
+
       span {
         position: absolute;
         display: flex;
@@ -551,17 +548,20 @@ main.menu {
         font: 0.9em sans-serif;
         font-weight: bolder;
         box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.788);
-        i{
+
+        i {
           font-size: 13pt;
         }
       }
-      
+
     }
+
     .desc {
       width: 65%;
       display: flex;
       flex-direction: column;
       padding: 40px;
+
       h2 {
         font-weight: 100;
         margin-bottom: 10px;
@@ -570,81 +570,96 @@ main.menu {
   }
 }
 
-.flex{display: flex;}
+.flex {
+  display: flex;
+}
+
 .agregarCarrito {
   position: fixed;
   bottom: 0;
-  
+
   width: 90%;
   padding: 20px;
   display: flex;
   gap: 3px;
   flex-direction: column;
-  p{
-    position: relative!important;
-    top: 0!important;
-  }
-  .botonCarrito {
-      height: 40px;
-      width: 40px;
-      display: grid;
-      place-items: center;
-      background-color: var(--verde);
-      color: black;
-      border: 0;
-      font-size: 18px;
-      transition: all 0.3s ease-in-out;
+
+  p {
+    position: relative !important;
+    top: 0 !important;
   }
 
-  button:hover{
-      box-shadow: 0 2px 0 black;
-      color: black;
-      cursor: pointer;
+  .botonCarrito {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    background-color: var(--verde);
+    color: black;
+    border: 0;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
   }
+
+  button:hover {
+    box-shadow: 0 2px 0 black;
+    color: black;
+    cursor: pointer;
+  }
+
   .btnAgregar {
-      border: 0;
-      flex: 1;
-      background-color: var(--verde);
-      color: black;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      font-size: 18px;
+    border: 0;
+    flex: 1;
+    background-color: var(--verde);
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
   }
 }
+
+a:visited {
+  color: rgb(73, 228, 248);
+}
+
 @media screen and (orientation=landscape) {
-  main.index{
+  main.index {
     padding: 20px;
+
     .offers {
       width: 100%;
       display: flex !important;
       flex-direction: row;
       flex-wrap: wrap;
     }
+
     a {
       height: 160px;
       flex: 0 0 calc(50% - 15px);
     }
   }
-  main.menu{
+
+  main.menu {
     padding: 20px;
-      width: 100%;
-      display: flex !important;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
     a {
       height: 160px;
       flex: 0 0 calc(40% - 15px);
     }
-    span.Titulo{
+
+    span.Titulo {
       right: 45%;
     }
   }
 }
 
-@media screen and (orientation=portrait) {
-}
+@media screen and (orientation=portrait) {}
