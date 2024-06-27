@@ -8,7 +8,7 @@ fetch('js/restos.json')
     })
     .then(data => {
         data.forEach(e => {
-            body.innerHTML += /*html*/
+            body.innerHTML += 
                 `<a id="${e.name}" class="restaurante">
         <article class="oferta">
             <div class="img">
