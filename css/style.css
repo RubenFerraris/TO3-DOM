@@ -643,7 +643,10 @@ main.menu {
     padding: 20px;
     width: 100%;
     display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     a {
       height: 160px;
