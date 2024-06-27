@@ -8,7 +8,7 @@ fetch('js/restos.json')
         data.forEach(e => {
             if (e.name == localStorage.getItem("titulo")) {
                 e.menu.forEach((el)=>{
-                    body.innerHTML += /*html*/
+                    body.innerHTML += 
                     `<a href="comida.html" class="platillo">
                     <div class="img">
                       <img src="img/pngwing.com.png" />
