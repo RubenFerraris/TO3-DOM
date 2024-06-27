@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/material-icons.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Bodegones</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/material-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bodegones</title>
 </head>
-<body>
-  <header>
-    <section class="portada">
-      <div class="saludo">
-        <h3>Hello there</h3>
-        <h6>Za warudo</h6>
-      </div>
-      <div class="buscador">
-        <div class="icono"><span class="icons">fmd_good</span></div>
-        <input type="search" placeholder="Search on MorfiHub.com">
-        <input class="icons" type="submit" value="search">
-      </div>
-    </section>
-    <nav class="categorias flex">
-      <a href="#1" class="btn_cat">
-        <span class="icons">ramen_dining</span>
-        <div class="f25">Chinese</div>
-      </a>
-      <a href="#2" class="btn_cat">
-        <span class="icons">lunch_dining</span>
-        <div class="f25">American</div>
-      </a>
-      <a href="#3" class="btn_cat">
-        <span class="icons">local_pizza</span>
-        <div class="f25">Italian</div>
-      </a>
-      <a href="#4" class="btn_cat">
-        <span class="icons">bakery_dining</span>
-        <div class="f25">French</div>
-      </a>
-      <a href="#5" class="btn_cat">
-        <span class="icons">emoji_food_beverage</span>
-        <div class="f25">English</div>
-      </a>
-      <a href="#6" class="btn_cat">
-        <span class="icons">kebab_dining</span>
-        <div class="f25">Spanish</div>
-      </a>
-      <a href="#7" class="btn_cat">
-        <span class="icons">tapas</span>
-        <div class="f25">Tapas</div>
-      </a>
-      <a href="#8" class="btn_cat">
-        <span class="icons">brunch_dining</span>
-        <div class="f25">Breakfast</div>
-      </a>
-      <a href="#9" class="btn_cat">
-        <span class="icons">egg</span>
-        <div class="f25">Perubian</div>
-      </a>
-    </nav>
-  </header>
-  <main>
-    <section class="productos">
-      <div class="text">OFFERS</div>
-      <div class="wrap" id="restoList"></div>
-    </section>
-  </main>
-  <script src="js/index.js"></script>
+
+<body> 
+    <header class="index">
+        <section class="portada">
+            <div class="saludo">
+                <h2>Hello there</h2>
+                <h5>ZA WARUDO</h5>
+            </div>
+            <div class="buscador">
+                <div class="icono"><i class="iconos">fmd_good</i> </div>
+                <input type="search" placeholder="Ingrese busqueda...">
+                <input type="submit" class="iconos" value="search">
+            </div>
+        </section>
+        <nav class="categorias">
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">egg</i>
+                Izquierdo
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">egg</i>
+                Derecho
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">liquor</i>
+                Liqour
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25 ">bakery_dining</i>
+                Bakery
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">ramen_dining</i>
+                Ramen
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">icecream</i>
+                Icecream
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">local_pizza</i>
+                Pizza
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">tapas</i>
+                Tapas
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">lunch_dining</i>
+                Lunch
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">local_cafe</i>
+                coffee
+            </a>
+            <a href="" class="btn_categoria">
+                <i class="iconos f25">ramen_dining</i>
+                Ramen
+            </a>
+        </nav>
+    </header>
+    <main class="index">
+        <span class="titulo">OFFERS</span>
+        <section class="offers" id="resto">
+        
+        </section>
+    </main>
+    <script src="js/leerjson.js"></script>
+    <script src="js/resto.js"></script>
 </body>
+
 </html>
