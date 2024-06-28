@@ -2,12 +2,12 @@
     {
         "name": "Club De la milanesa",
         "avatar": {
-            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/King%20of%20the%20Wings/king_of_the_wings_logo_0.jpg?itok=mvKcHHD6",
+            "src": "img/milanesa.jpg",
             "alt": "",
             "title": ""
         },
         "location": "Grand Bourg, Rotonda",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum at accusantium natus architecto delectus, omnis nemo.",
+        "description": "Venden mila",
         "open": "09:00",
         "close": "11:00",
         "stars": 1,
@@ -94,12 +94,12 @@
     {
         "name": "Kono Diavolo Da",
         "avatar": {
-            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Nom%20Nom%20Eats/ayspruay.png?itok=6BA4IING",
+            "src": "img/diavolo.jpg",
             "alt": "",
             "title": ""
         },
         "location": "Capri,Italia",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum at accusantium natus architecto delectus, omnis nemo.",
+        "description": "Korega requiem da",
         "open": "∞",
         "close": "∞",
         "stars": 3,
@@ -176,12 +176,12 @@
     {
         "name": "PapuRestaurante",
         "avatar": {
-            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/How%20We%20Rolls/how_we_rolls_logo.jpg?itok=ehIB3Zq6",
+            "src": "img/sdlg.png",
             "alt": "",
             "title": ""
         },
         "location": "PapuCasa",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum at accusantium natus architecto delectus, omnis nemo.",
+        "description": "When haces un restaurante, pero no tienes tiempo de abrirlo, oh mi dinero",
         "open": "00:00",
         "close": "00:01",
         "stars": 4,
@@ -263,12 +263,12 @@
     {
         "name": "Kuse ga Tsuyoi Menya Reiwa",
         "avatar": {
-            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Rolling%20Stone%20Pizza/rspizza_bricks.png?itok=NEq3QsoB",
+            "src": "img/japan.jpg",
             "alt": "",
             "title": ""
         },
         "location": "Osaka,Japan",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum at accusantium natus architecto delectus, omnis nemo.",
+        "description": "restaurante japo",
         "open": "12:00",
         "close": "19:00",
         "stars": 4,
@@ -345,12 +345,12 @@
     {
         "name": "El Chotazo",
         "avatar": {
-            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/header/public/images/Catch%20and%20Kiss/claudette_12_no_signage_mkii.jpg?itok=LpQaVqNJ",
+            "src": "img/elchotazo.jpg",
             "alt": "",
             "title": ""
         },
         "location": "Tortu, Plaza La Amistad",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum at accusantium natus architecto delectus, omnis nemo.",
+        "description": "Grande como esta",
         "open": "9:00",
         "close": "11:00",
         "stars": 4,
@@ -427,12 +427,12 @@
     {
         "name": "Panchotazo",
         "avatar": {
-            "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/avatarlarge/public/images/Sate%20House/sate_house_logo.jpg?itok=xVbi5t3c",
+            "src": "img/panchotazo.jpg",
             "alt": "",
             "title": ""
         },
         "location": "Grand Bourg, Rotonda",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum at accusantium natus architecto delectus, omnis nemo.",
+        "description": "Vendemos la que te gusta",
         "open": "9:00",
         "close": "11:00",
         "stars": 5,
